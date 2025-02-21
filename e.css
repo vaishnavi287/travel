@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url("Back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.box {
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.circle {
+    height: 3vw;
+    width: 3vw;
+    background-color: #7ed0f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 8%;
+    left: 49%;
+    z-index: 1;
+}
+
+.icon {
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5495fd;
+    line-height: .8;
+    letter-spacing: 2px;
+    /* padding-top: 1vw; */
+    
+}
+
+h1 {
+    font-family:cursive;
+    position: relative;
+    z-index: 2;
+}
+
+.box h2 {
+    margin: 1.5vh 0;
+    font-size: 2.6vw;
+}
+
+.f{
+    height: fit-content;
+    width: 100%;
+    padding: 1vw 2vw;
+    line-height: .8;
+    letter-spacing: 2px;
+}
+
+.forms {
+    height: fit-content;
+    width: 100%;
+    padding: .7vw 2vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.f label {
+    padding: .5vw 0;
+    font-size: 1vw;
+    letter-spacing: .04vw;
+}
+
+
+.forms input {
+    padding: .9vw;
+    border-radius: 50px;
+    border: none;
+    font-size: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: rgb(232, 227, 227);
+}
+
+.box p {
+    text-align: center;
+    padding-bottom: 1vw;
+    margin: 0 4vw;
+}
+
+.box h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-top: .8vw;
+}
+
+.box h3 a {
+    color: #5495fd;
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
