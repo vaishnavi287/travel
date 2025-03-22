@@ -1,0 +1,742 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 560;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5kaWElMjB0b3VyaXNtfGVufDB8fDB8fHww);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 6px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Mumbai";}
+    10%{content: "New Delhi";}
+    20%{content: "Pune";}
+    30%{content: "Jaipur";}
+    40%{content: "Nashik";}
+    50%{content: "Shirdi";}
+    60%{content: "Akkalkot";}
+    70%{content: "maldivs";}
+    80%{content: "Agra";}
+    90%{content: "Goa";}
+    100%{content: "Shimla";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+/blogs sectiction start/
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+
+.blogs .box-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+
+}
+
+
+.blogs .box-container .box {
+
+    border: var(--border);
+
+}
+
+
+.blogs .box-container .box .image {
+
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.blogs .box-container .box .image img {
+
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+
+}
+
+.blogs .box-container .box:hover .image img {
+
+    transform: scale(1.2);
+}
+
+
+
+.blogs .box-container .box .content {
+
+    padding: 2rem;
+}
+
+
+
+.blogs .box-container .box .content .title {
+
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+
+}
+
+.blogs .box-container .box .content .title:hover {
+
+    color: var(--main-color);
+
+
+}
+
+
+
+.blogs .box-container .box .content span {
+
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+
+
+}
+
+.blogs .box-container .box .content p {
+
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;300;400;500;700&display=swap');
+
+
+:root {
+
+
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+
+}
+
+
+* {
+
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+
+}
+
+
+
+html {
+
+   
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+    background: var(--bg);
+}
+
+
+
+section {
+
+    padding: 2rem 7%;
+}
+
+
+.heading {
+
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+
+.heading span {
+
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+
+.btn {
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+
+    font-size: 1.7rem;
+    background: var(--main-color);
+    cursor: pointer;
+
+
+}
+
+
+.btn:hover {
+
+    letter-spacing: .2rem;
+}
+
+.about .row {
+
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+
+}
+
+.about .row .image {
+
+    flex: 1 1 45rem;
+
+}
+
+.about .row .image img {
+
+    width: 100%;
+
+}
+
+
+.about .row .content {
+
+    flex: 1 1 45rem;
+    padding: 2rem;
+
+
+}
+
+
+.about .row .content h3 {
+
+    font-size: 3rem;
+    color: #fff;
+}
+
+
+.about .row .content p {
+
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;300;400;500;700&display=swap');
+
+
+:root {
+
+
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+
+}
+
+
+* {
+
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+
+}
+
+
+
+html {
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: #fff;
+  padding: 15px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline;
+  margin-left: 20px;/
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+
+   
+
+/*About Section end */
+
+
+
+
+
+
+
+
+
+.contact{
+
+    padding: 80px;
+    text-align: center;
+    background-color: #f7f7f7;
+
+}
+
+.contact h3{
+
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+
+}
+
+.contact-info p{
+
+
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.contact-info ul{
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.contact-info li{
+
+    margin:0 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+     
+}
+
+.form{
+
+    width: 100%;
+
+}
+
+input,textarea{
+
+
+    width: 70%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+   box-shadow:0 0 5px rgba(0,0,0, 0.1);
+   border-radius: 5px;
+   font-size: 1.4rem;
+   font-family: "Dongle-regular";
+}
+
+textarea{
+
+    height:180px
+}
+
+.form button{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+
+.form button:hover{
+
+    background-color: #333;
+
+}
+
+footer{
+
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.social-icon a{
+    
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+
+}
+
+
+footer p{
+
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1177px) {
+    .hero-content h1{
+
+        line-height: 0.7;
+    }
+    
+    .hero-content p{
+
+        margin-top: 0;
+        line-height: 0.8;
+    }
+
+  .destinations img{
+
+
+    height: 250px;
+}
+  input,textarea{
+
+    width: 100%;
+  }
+
+}
+@media (max-width: 768px) {
+
+      .hero-content h1{
+
+        margin-bottom: 5px;
+      }
+      
+      .destinations-grid{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+    }
+
+
+}
+@media (max-width:603px) {
+
+   .hero-content h1{
+    font-size: 1.8rem;
+
+   }
+  .hero-content p{
+
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:430px) {
+
+
+     header{
+        display: none;
+     }
+
+     .hero-content h1{
+
+        font-size: 1.3rem;
+     }
+   .hero-content p{
+
+    font-size: 1rem;
+   }
+
+
+
+     .hero-button{
+        padding: 6px 22px;
+        font-size: 16px;
+     }
+    
+     .destinations{
+
+        font-size: 1.5rem;
+     }
+     .destinations-grid{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
+    }
+
+
+}
